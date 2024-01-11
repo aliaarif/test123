@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Two Column Layout with Bootstrap 5</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* style.css */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            /* background-color: #e6e6e6; */
+        }
+
+        .container {
+            display: flex;
+            width: 100%;
+            /* border: 1px solid black; */
+        }
+
+        .column {
+            flex: 1;
+            /* This makes each column take up an equal amount of space */
+            padding: 20px;
+            /* Add some padding inside the columns */
+        }
+
+        #left-column {
+            background-color: red;
+            width: 100%;
+            height: 100vh;
+            border: 1px solid black;
+            /* Light gray background for the left column */
+        }
+
+        #right-column {
+            background-color: #e6e6e6;
+            height: 100vh;
+            border: 1px solid black;
+            /* Slightly darker gray for the right column */
+        }
+
+        .br1 {
+            border: 1px solid;
+        }
+
+        .br2 {
+            border: 2px solid;
+        }
+
+        .br3 {
+            border: 3px solid;
+        }
+
+        .left-box {
+            min-height: calc(100% - 86px);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="row m-0 p-0 br1">
+        <div class="col-12 br1 shadow">
+            <div class="container br1">
+                <nav class="navbar navbar-expand-lg">
+                    <a class="navbar-brand" href="#">Navbar</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Link</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Dropdown
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                            </li>
+                        </ul>
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>
+                    </div>
+
+                </nav>
+                <!-- Content for the left column goes here -->
+            </div>
+        </div>
+        <div class="col-md-6 p-0 bg-danger ">
+            <div class="left-box">
+                <div class="text-center left-contents ">
+                    Left
+                </div>
+                <!-- Content for the left column goes here -->
+            </div>
+        </div>
+        <div class="col-md-6 p-0 bg-success">
+            <div class="container br1">
+                Right
+                <!-- Content for the right column goes here -->
+            </div>
+        </div>
+        <div class="col-md-12 ">
+            <div class="container br1">
+                Footer
+                <!-- Content for the left column goes here -->
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Optional: Bootstrap Bundle with Popper (for Bootstrap's JavaScript components) -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
