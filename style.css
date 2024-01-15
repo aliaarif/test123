@@ -1,0 +1,90 @@
+/* style.css */
+@font-face {
+    font-family: 'Careem';
+    src: url('/fonts/Careem Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background-color: white;
+    font-family: 'Careem';
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 5px;
+    background-color: #e7e7e7;
+    border: 1px solid #cacaca;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: #B79D6E;
+}
+
+.br {
+    border: 1px solid black;
+}
+
+#wrapper {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+}
+
+header {
+    background-color: white;
+    height: 90px;
+    z-index: 1020;
+}
+
+#content {
+    width: 100%;
+    overflow: hidden;
+    padding-top: 90px;
+    padding-bottom: 55px;
+}
+
+.left {
+    background-color: white;
+    min-height: calc(100vh - 135px);
+}
+
+.left-main-wrapper {
+    margin: 1px auto;
+    width: 24%;
+}
+
+.right {
+    background-color: #f5f5fa;
+    min-height: calc(100vh - 139px);
+}
+
+.right-main-wrapper {
+    width: 100%;
+}
+
+
+footer {
+    background-color: white;
+    height: 55px;
+    z-index: 1020;
+    box-shadow: 0px -2px 10px 0px rgba(0, 0, 0, 0.05);
+}
